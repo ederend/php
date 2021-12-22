@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>HtMl_PHP </title>
+</head>
+<body>
+    <?php
+
+  //   таблица
+  $cols = 8;
+  $rows = 8;
+  ?>
+  <style>
+  table { border: 0; }
+  td { padding: 5px; text-align: center; }
+  </style>
+  
+  <table>
+  <?php
+  // цикл для прохода по всем строкам
+  for ($tr = 1; $tr <= $rows; $tr++)
+  {
+      echo '<tr>';
+      // цикл для исспользования каждой ячейки строки 
+      for($td = 1; $td <= $cols; $td++)
+      {
+          $background = 'white';
+  
+          echo '<td style="background-color:', $background, '">', $tr * $td, '</td>';
+      }
+      echo "</tr>";
+  }
+  ?>
+  
+
+     </body>
+</html>

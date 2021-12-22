@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>HtMl_PHP </title>
+</head>
+<body>
+     
+
+<?php
+$a=20;
+$b=10;
+$c=1;
+// сравниваем число А
+if($a>$b && $a>$c)
+{
+echo "Greater value is a=".$a;
+}
+// сравниваем число Б, если А не подошло
+else if($b>$a && $b>$c)
+{
+echo "Greater value is b=".$b;
+}
+// сравниваем число С, если остальные два не подошли
+else if($c>$a && $c>$b)
+{
+echo "Greater value is c=".$c;
+}
+else // если числа одинаковые, выводим следующие
+{
+echo"Dont Enter Equal Values";
+}
+?>
+
+   
+  
+
+     </body>
+</html>
